@@ -62,26 +62,26 @@
             bindings = <
 &auto_shift LS(GRAVE) GRAVE  &auto_shift LS(N1) N1  &auto_shift LS(N2) N2  &auto_shift LS(N3) N3  &auto_shift LS(N4) N4  &auto_shift LS(N5) N5  &auto_shift LS(N6) N6  &auto_shift LS(N7) N7  &auto_shift LS(N8) N8  &auto_shift LS(N9) N9  &auto_shift LS(N0) N0        &auto_shift BSLH LS(BSLH)
 &kp CAPS                     &trans                 &trans                 &trans                 &trans                 &kp ENTER              &kp LEFT               &kp DOWN               &kp UP_ARROW           &kp RIGHT              &auto_shift LS(MINUS) MINUS  &auto_shift LS(EQUAL) EQUAL
-&trans                       &trans                 &trans                 &trans                 &trans                 &trans                 &trans                 &kp C_MUTE             &kp C_VOL_DN           &kp C_VOL_UP           &trans                       &kp DELETE
+&trans                       &trans                 &trans                 &trans                 &trans                 &kp BACKSPACE          &trans                 &kp C_MUTE             &kp C_VOL_DN           &kp C_VOL_UP           &trans                       &kp DELETE
 &trans                       &trans                 &trans                 &trans                 &tog 1                 &tog 1                 &kp N0                 &kp N0                 &trans                 &trans                 &trans                       &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&auto_shift LS(GRAVE) GRAVE  &kp F1  &kp F2  &kp F3  &kp LA(F4)  &kp F5  &kp F6  &kp F8  &kp F9  &kp F10  &kp F11                    &kp F12
-&kp CLCK                     &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &auto_shift LS(LBKT) LBKT  &auto_shift LS(RBKT) RBKT
-&trans                       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans                     &trans
-&trans                       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans                     &trans
+&auto_shift LS(GRAVE) GRAVE  &kp F1  &kp F2  &kp F3  &kp LA(F4)  &kp F5       &kp F6  &kp F8  &kp F9  &kp F10  &kp F11                    &kp F12
+&kp CLCK                     &trans  &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans   &auto_shift LS(LBKT) LBKT  &auto_shift LS(RBKT) RBKT
+&trans                       &trans  &trans  &trans  &trans      &bootloader  &trans  &trans  &trans  &trans   &trans                     &trans
+&trans                       &trans  &trans  &trans  &trans      &trans       &trans  &trans  &trans  &trans   &trans                     &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &trans        &kp PRINTSCREEN            &trans
-&kp K_POWER  &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans        &auto_shift LS(LBKT) LBKT  &auto_shift LS(RIGHT_BRACKET) RIGHT_BRACKET
-&trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1               &bt BT_SEL 2
-&trans       &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 3  &bt BT_SEL 4               &bt BT_CLR
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &trans        &kp PRINTSCREEN            &trans
+&trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans        &auto_shift LS(LBKT) LBKT  &auto_shift LS(RIGHT_BRACKET) RIGHT_BRACKET
+&trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1               &bt BT_SEL 2
+&trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 3  &bt BT_SEL 4               &bt BT_CLR
             >;
         };
     };
